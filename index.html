@@ -27,17 +27,29 @@
             color: #AC5E53;
             margin-bottom: 0.5rem;
         }
-        .highlight {
-            color: #e74c3c;
-            font-weight: bold;
-        }
         ul {
             list-style-type: none;
             padding: 0;
             line-height: 1.8;
+            margin-bottom: 1.5rem;
         }
         .emoji {
             margin-right: 10px;
+        }
+        /* Styl pro odkaz/tlačítko */
+        .link-button {
+            display: inline-block;
+            color: white;
+            background-color: #AC5E53;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .link-button:hover {
+            background-color: #3e7a82;
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -52,6 +64,9 @@
             <li><span class="emoji">🐾</span>Mám <strong>1 kočku</strong> a <strong>2 psy</strong></li>
             <li><span class="emoji">💃</span>Mým velkým koníčkem je <strong>tancování</strong></li>
         </ul>
+        
+        <!-- Tady je ten odkaz -->
+        <a href="dalsistranka.html" class="link-button">Moje tvorba →</a>
     </div>
 
 </body>
