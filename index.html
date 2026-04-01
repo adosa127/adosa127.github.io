@@ -8,7 +8,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #53a1ac;
-            color: #53a1ac;
+            color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,7 +24,7 @@
             text-align: center;
         }
         .photo-container img {
-            width: 120px; /* Velikost fotky */
+            width: 120px;
             margin-bottom: 10px;
             border-radius: 10px;
         }
@@ -37,9 +37,12 @@
             padding: 0;
             line-height: 1.8;
             margin-bottom: 1.5rem;
+            text-align: left;
         }
-        .emoji {
-            margin-right: 10px;
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
         .link-button {
             display: inline-block;
@@ -60,21 +63,23 @@
 <body>
 
     <div class="card">
-        <!-- Hangyodon Fotka -->
         <div class="photo-container">
-          
-        </div>
+            </div>
 
         <h1>A. Dosoudilová</h1>
         <p>Ahoj, vítejte na mém profilu! Tady je něco o mně :)</p>
         <hr>
+        
         <ul>
-            <li><span </span>Je mi <strong>18 let</strong></li>
-            <li><span Moc ráda <strong>Studuju angličtinu</strong> na Gymnáziu Amazon.</li>
-            <li><span class="emoji"</span>Mým velkým koníčkem je <strong>tancování</strong></li>
+            <li>Je mi <strong>18 let</strong></li>
+            <li>Moc ráda <strong>studuju angličtinu</strong> na Gymnáziu Amazon.</li>
+            <li>Mým velkým koníčkem je <strong>tancování</strong></li>
         </ul>
         
-        <a href="dalsistranka.html" class="link-button">Moje taneční skupina →</a>
+        <div class="button-container">
+            <a href="dalsistranka.html" class="link-button">Moje taneční skupina →</a>
+            <a href="cpp.html" class="link-button">Moje oblíbené místo →</a>
+        </div>
     </div>
 
 </body>
